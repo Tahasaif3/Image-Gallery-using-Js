@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <div class="main-image">
+                <!-- Set the initial main image URL correctly -->
+                <img src="https://img.freepik.com/premium-photo/laptop-with-word-code-screen-is-displayed-purple-background_1064589-235826.jpg?height=400&width=600" alt="Main Image" id="mainImage">
+            </div>
+            <div class="thumbnails">
+                <!-- Add a data-full attribute to each thumbnail for the full-size image URL -->
+                <img src="https://img.freepik.com/premium-photo/person-coding-project-laptop_1079150-36836.jpg?height=100&width=150" data-full="https://img.freepik.com/premium-photo/person-coding-project-laptop_1079150-36836.jpg?height=400&width=600" alt="Thumbnail 1" class="thumbnail active">
+                <img src="https://img.freepik.com/premium-photo/glowing-darkthemed-ide-with-html-code-flat-lay_38013-114261.jpg?height=100&width=150" data-full="https://img.freepik.com/premium-photo/glowing-darkthemed-ide-with-html-code-flat-lay_38013-114261.jpg?height=400&width=600" alt="Thumbnail 2" class="thumbnail">
+                <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg?height=100&width=150" data-full="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg?height=400&width=600" alt="Thumbnail 3" class="thumbnail">
+                <img src="https://img.freepik.com/free-photo/it-specialist-checking-code-computer-dark-office-night_1098-18699.jpg?height=100&width=150" data-full="https://img.freepik.com/free-photo/it-specialist-checking-code-computer-dark-office-night_1098-18699.jpg?height=400&width=600" alt="Thumbnail 4" class="thumbnail">
+                <img src="https://img.freepik.com/premium-photo/late-night-coding-session-illuminated-by-neon-hues_101964-6214.jpg?height=100&width=150" data-full="https://img.freepik.com/premium-photo/late-night-coding-session-illuminated-by-neon-hues_101964-6214.jpg?height=400&width=600" alt="Thumbnail 5" class="thumbnail">
+            </div>
+            <div class="navigation">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
